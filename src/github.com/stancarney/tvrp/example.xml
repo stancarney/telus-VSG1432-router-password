@@ -1,0 +1,2023 @@
+<DslCpeConfig version="3.0">
+  <InternetGatewayDevice>
+    <LANDeviceNumberOfEntries>1</LANDeviceNumberOfEntries>
+    <WANDeviceNumberOfEntries>3</WANDeviceNumberOfEntries>
+    <DeviceInfo>
+      <FirstUseDate>2016-12-26T09:27:34-08:00</FirstUseDate>
+      <VendorConfigFileNumberOfEntries>0</VendorConfigFileNumberOfEntries>
+    </DeviceInfo>
+    <X_5067F0_IPTVSTB>
+      <DHCPOption60>SAIP*,MSFT_IPTV,udhcp*</DHCPOption60>
+      <DHCPOption67>CVT/2/239.192.10.200:16000+SA=239.192.10.200:16000</DHCPOption67>
+    </X_5067F0_IPTVSTB>
+    <X_5067F0_SyslogCfg>
+      <Enable>TRUE</Enable>
+      <Option>local buffer</Option>
+      <X_5067F0_LogCategory>System,DHCP_client,PPPoE,Wireless,DHCP_server,UPnP,NAT,Static_route,DDNS,IGMP,QoS,TR-069,NTP,Firewall,MAC_filter,Forwarded_web,Blocked_web,Attack,Certificate,IPSec,Account</X_5067F0_LogCategory>
+    </X_5067F0_SyslogCfg>
+    <X_5067F0_LoginCfg>
+      <AdminPassword>cHRxWkxKZ1lqTHdBAA==</AdminPassword>
+      <X_5067F0_LoginGroupNumberOfEntries>2</X_5067F0_LoginGroupNumberOfEntries>
+      <X_5067F0_LoginGroupConfigurable>FALSE</X_5067F0_LoginGroupConfigurable>
+      <X_5067F0_Login_Group instance="1">
+        <GroupKey>0</GroupKey>
+        <Privilege>broadband,homeNetworking,wireless,qos,nat,DNSSetting,IGMPSetting,firewall,macFilter,parentalControl,schedulerRules,arpTable,log,trafficStatus,igmpGroupStatus,xdslStatistics,timeSetting,logsSetting,firmwareUpgrade,configuration,reboot,disagnostic,quickStart,ntpServer</Privilege>
+        <Name>Administrator</Name>
+        <ConsoleLevel>2</ConsoleLevel>
+        <Use_Login_Info instance="1">
+          <UserName>tech</UserName>
+          <Password>MnZ3MzVORXZ0Z1NiAA==</Password>
+          <LatestLoginRetryTimes>1</LatestLoginRetryTimes>
+          <CurrentLoginSuccessTime>1482775374</CurrentLoginSuccessTime>
+          <CurrentLoginSuccessFrom>192.168.1.66</CurrentLoginSuccessFrom>
+          <LoginFailCountLeft>1</LoginFailCountLeft>
+          <ShowInfo>FALSE</ShowInfo>
+        </Use_Login_Info>
+        <Use_Login_Info nextInstance="2" ></Use_Login_Info>
+      </X_5067F0_Login_Group>
+      <X_5067F0_Login_Group instance="2">
+        <GroupKey>2</GroupKey>
+        <Privilege>homeNetworking,wireless,nat,DNSSetting,firewall,macFilter,parentalControl,schedulerRules,arpTable,log,timeSetting,firmwareUpgrade,configuration,reboot,disagnostic,quickStart</Privilege>
+        <Name>User</Name>
+        <Use_Login_Info instance="1">
+          <UserName>admin</UserName>
+          <Password>Y2VsaWNhMjAwMAA=</Password>
+          <LatestLoginSuccessTime>1482752240</LatestLoginSuccessTime>
+          <LatestLoginSuccessFrom>192.168.1.68</LatestLoginSuccessFrom>
+          <CurrentLoginRetryTimes>1</CurrentLoginRetryTimes>
+          <CurrentLoginSuccessTime>1482758475</CurrentLoginSuccessTime>
+          <CurrentLoginSuccessFrom>192.168.1.68</CurrentLoginSuccessFrom>
+          <LoginFailCountLeft>1</LoginFailCountLeft>
+          <ShowInfo>FALSE</ShowInfo>
+        </Use_Login_Info>
+        <Use_Login_Info nextInstance="2" ></Use_Login_Info>
+      </X_5067F0_Login_Group>
+      <X_5067F0_Login_Group nextInstance="3" ></X_5067F0_Login_Group>
+    </X_5067F0_LoginCfg>
+    <X_5067F0_Users>
+      <TechPassword>MnZ3MzVORXZ0Z1NiAA==</TechPassword>
+      <RootPassword>cHRxWkxKZ1lqTHdBAA==</RootPassword>
+    </X_5067F0_Users>
+    <X_5067F0_PortMapping>
+      <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+    </X_5067F0_PortMapping>
+    <X_5067F0_AccessServiceCfg>
+      <HttpStatus>LAN_ONLY</HttpStatus>
+      <SshStatus>DENY_ALL</SshStatus>
+      <TelnetStatus>DENY_ALL</TelnetStatus>
+      <FtpStatus>DENY_ALL</FtpStatus>
+      <HttpsStatus>LAN_ONLY</HttpsStatus>
+    </X_5067F0_AccessServiceCfg>
+    <X_5067F0_EthernetSwitch>
+      <NumberOfVirtualPorts>6</NumberOfVirtualPorts>
+      <EnableVirtualPorts>TRUE</EnableVirtualPorts>
+      <IfName>(null)</IfName>
+    </X_5067F0_EthernetSwitch>
+    <ManagementServer>
+      <URL>https://dm.telus.com</URL>
+      <LastConnectedURL>https://dm.telus.com</LastConnectedURL>
+      <Username>5067F0-VSG1432-S140Y04083717</Username>
+      <Password>54613fb0f956e49087725dbee5b3eb34</Password>
+      <PeriodicInformEnable>TRUE</PeriodicInformEnable>
+      <PeriodicInformInterval>172800</PeriodicInformInterval>
+      <PeriodicInformTime>2016-12-26T17:52:48-07:00</PeriodicInformTime>
+      <ConnectionRequestURL notification="2">http://108.173.186.63:7547/tr069</ConnectionRequestURL>
+      <ConnectionRequestUsername>5067F0-VSG1432-S140Y04083717</ConnectionRequestUsername>
+      <ConnectionRequestPassword>ff5fd945da8b522c1ddc74fe95b942ad</ConnectionRequestPassword>
+    </ManagementServer>
+    <Time>
+      <NTPServer1>pool.ntp.org</NTPServer1>
+      <NTPServer2>clock.isc.org</NTPServer2>
+      <LocalTimeZone>Mountain Time</LocalTimeZone>
+      <LocalTimeZoneName>MST7MDT,M3.2.0/2:0,M11.1.0/2:0</LocalTimeZoneName>
+    </Time>
+    <Layer2Bridging>
+      <BridgeNumberOfEntries>1</BridgeNumberOfEntries>
+      <FilterNumberOfEntries>13</FilterNumberOfEntries>
+      <MarkingNumberOfEntries>0</MarkingNumberOfEntries>
+      <AvailableInterfaceNumberOfEntries>13</AvailableInterfaceNumberOfEntries>
+      <Bridge instance="1">
+        <BridgeKey>0</BridgeKey>
+        <BridgeEnable>TRUE</BridgeEnable>
+        <BridgeName>Default</BridgeName>
+      </Bridge>
+      <Bridge nextInstance="2" ></Bridge>
+      <Filter instance="1">
+        <FilterKey>1</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>1</FilterInterface>
+      </Filter>
+      <Filter instance="2">
+        <FilterKey>2</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>2</FilterInterface>
+      </Filter>
+      <Filter instance="3">
+        <FilterKey>3</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>3</FilterInterface>
+      </Filter>
+      <Filter instance="4">
+        <FilterKey>4</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>4</FilterInterface>
+      </Filter>
+      <Filter instance="5">
+        <FilterKey>5</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>5</FilterInterface>
+      </Filter>
+      <Filter instance="6">
+        <FilterKey>6</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>6</FilterInterface>
+      </Filter>
+      <Filter instance="7">
+        <FilterKey>7</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>7</FilterInterface>
+      </Filter>
+      <Filter instance="8">
+        <FilterKey>8</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>8</FilterInterface>
+      </Filter>
+      <Filter instance="9">
+        <FilterKey>9</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>9</FilterInterface>
+      </Filter>
+      <Filter instance="10">
+        <FilterKey>10</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>10</FilterInterface>
+      </Filter>
+      <Filter instance="11">
+        <FilterKey>11</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>11</FilterInterface>
+      </Filter>
+      <Filter instance="12">
+        <FilterKey>12</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>12</FilterInterface>
+      </Filter>
+      <Filter instance="13">
+        <FilterKey>13</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>13</FilterInterface>
+      </Filter>
+      <Filter nextInstance="14" ></Filter>
+      <AvailableInterface instance="1">
+        <AvailableInterfaceKey>1</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="2">
+        <AvailableInterfaceKey>2</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="3">
+        <AvailableInterfaceKey>3</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="4">
+        <AvailableInterfaceKey>4</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="5">
+        <AvailableInterfaceKey>5</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="6">
+        <AvailableInterfaceKey>6</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="7">
+        <AvailableInterfaceKey>7</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="8">
+        <AvailableInterfaceKey>8</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="9">
+        <AvailableInterfaceKey>9</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.2.WANConnectionDevice.1.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="10">
+        <AvailableInterfaceKey>10</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="11">
+        <AvailableInterfaceKey>11</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="12">
+        <AvailableInterfaceKey>12</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.3.WANConnectionDevice.1.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="13">
+        <AvailableInterfaceKey>13</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.5</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface nextInstance="14" ></AvailableInterface>
+    </Layer2Bridging>
+    <QueueManagement>
+      <Enable>TRUE</Enable>
+      <ClassificationNumberOfEntries>17</ClassificationNumberOfEntries>
+      <AppNumberOfEntries>0</AppNumberOfEntries>
+      <FlowNumberOfEntries>0</FlowNumberOfEntries>
+      <PolicerNumberOfEntries>0</PolicerNumberOfEntries>
+      <QueueNumberOfEntries>8</QueueNumberOfEntries>
+      <Classification instance="1">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>1</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <DestIP>198.53.64.20</DestIP>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule1</X_5067F0_ClassName>
+      </Classification>
+      <Classification instance="2">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>2</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <DestIP>198.53.64.20</DestIP>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule2</X_5067F0_ClassName>
+      </Classification>
+      <Classification instance="3">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>3</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <DestIP>198.53.64.21</DestIP>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule3</X_5067F0_ClassName>
+      </Classification>
+      <Classification instance="4">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>4</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <DestIP>198.53.64.21</DestIP>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule4</X_5067F0_ClassName>
+      </Classification>
+      <Classification instance="5">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>5</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>123</DestPort>
+        <DestPortRangeMax>123</DestPortRangeMax>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule5</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="6">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>6</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>123</DestPort>
+        <DestPortRangeMax>123</DestPortRangeMax>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule6</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="7">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>7</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>67</DestPort>
+        <DestPortRangeMax>68</DestPortRangeMax>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule7</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="8">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>8</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>53</DestPort>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule8</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="9">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>9</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>53</DestPort>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule9</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="10">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>10</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>53</DestPort>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule10</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="11">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>11</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>53</DestPort>
+        <Ethertype>2048</Ethertype>
+        <DSCPMark>16</DSCPMark>
+        <ClassQueue>37</ClassQueue>
+        <X_5067F0_ClassName>Rule11</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="12">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>12</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>80</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule12</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="13">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>13</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>443</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule13</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="14">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>14</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>25</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule14</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="15">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>15</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>25</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule15</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="16">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>16</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>6</Protocol>
+        <DestPort>110</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule16</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification instance="17">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>17</ClassificationOrder>
+        <ClassInterface>LAN</ClassInterface>
+        <Protocol>17</Protocol>
+        <DestPort>110</DestPort>
+        <Ethertype>2048</Ethertype>
+        <ClassQueue>38</ClassQueue>
+        <X_5067F0_ClassName>Rule17</X_5067F0_ClassName>
+        <X_5067F0_VLANIDTag>0</X_5067F0_VLANIDTag>
+      </Classification>
+      <Classification nextInstance="18" ></Classification>
+      <Queue instance="1">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>1</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="2">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>2</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="3">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>3</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="4">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>4</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="5">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>5</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="6">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>6</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="7">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>7</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="8">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>8</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="9">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>1</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="10">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>2</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="11">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>3</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="12">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>4</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="13">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>5</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="14">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>6</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="15">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>7</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="16">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>8</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="17">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>1</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="18">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>2</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="19">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>3</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="20">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>4</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="21">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>5</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="22">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>6</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="23">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>7</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="24">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>8</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="25">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>1</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="26">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Voice Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>2</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="27">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>3</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="28">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Video Priority</X_5067F0_QueueName>
+        <X_5067F0_QueueId>4</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="29">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>5</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="30">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>6</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="31">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Background</X_5067F0_QueueName>
+        <X_5067F0_QueueId>7</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="32">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_5067F0_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_5067F0_QueueName>WMM Best Effort</X_5067F0_QueueName>
+        <X_5067F0_QueueId>8</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="33">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_5067F0_QueueName>DefaultQueue</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+      </Queue>
+      <Queue instance="34">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <X_5067F0_QueueName>PriQ1</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>1</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="35">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ2</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>2</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="36">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ3</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>3</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="37">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ4</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>4</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="38">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ5</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>5</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="39">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ6</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>6</X_5067F0_QueueId>
+      </Queue>
+      <Queue instance="40">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>WAN</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_5067F0_QueueName>PriQ7</X_5067F0_QueueName>
+        <X_5067F0_DslLatency>0</X_5067F0_DslLatency>
+        <X_5067F0_PtmPriority>0</X_5067F0_PtmPriority>
+        <X_5067F0_QueueId>7</X_5067F0_QueueId>
+      </Queue>
+      <Queue nextInstance="41" ></Queue>
+    </QueueManagement>
+    <LANDevice instance="1">
+      <LANEthernetInterfaceNumberOfEntries>5</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>4</LANWLANConfigurationNumberOfEntries>
+      <X_5067F0_LANMocaInterfaceNumberOfEntries>0</X_5067F0_LANMocaInterfaceNumberOfEntries>
+      <X_5067F0_IgmpSnoopingConfig>
+        <Enable>TRUE</Enable>
+      </X_5067F0_IgmpSnoopingConfig>
+      <LANHostConfigManagement>
+        <DHCPServerEnable>TRUE</DHCPServerEnable>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <Enable>TRUE</Enable>
+          <IPInterfaceIPAddress>192.168.1.254</IPInterfaceIPAddress>
+          <X_5067F0_IfName>br0</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface instance="2">
+          <IPInterfaceIPAddress>0.0.0.0</IPInterfaceIPAddress>
+          <IPInterfaceSubnetMask>0.0.0.0</IPInterfaceSubnetMask>
+          <X_5067F0_IfName>br0:0</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface instance="3">
+          <IPInterfaceIPAddress>0.0.0.0</IPInterfaceIPAddress>
+          <IPInterfaceSubnetMask>0.0.0.0</IPInterfaceSubnetMask>
+          <X_5067F0_IfName>br0:1</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface instance="4">
+          <IPInterfaceIPAddress>0.0.0.0</IPInterfaceIPAddress>
+          <IPInterfaceSubnetMask>0.0.0.0</IPInterfaceSubnetMask>
+          <X_5067F0_IfName>br0:2</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface instance="5">
+          <IPInterfaceIPAddress>0.0.0.0</IPInterfaceIPAddress>
+          <IPInterfaceSubnetMask>0.0.0.0</IPInterfaceSubnetMask>
+          <X_5067F0_IfName>br0:3</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface instance="6">
+          <IPInterfaceIPAddress>0.0.0.0</IPInterfaceIPAddress>
+          <IPInterfaceSubnetMask>0.0.0.0</IPInterfaceSubnetMask>
+          <X_5067F0_IfName>br0:4</X_5067F0_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="7" ></IPInterface>
+      </LANHostConfigManagement>
+      <LANEthernetInterfaceConfig instance="1">
+        <Enable>TRUE</Enable>
+        <X_5067F0_IfName>eth0.0</X_5067F0_IfName>
+        <X_5067F0_DefaultTagProcessing>-1</X_5067F0_DefaultTagProcessing>
+        <X_5067F0_DefaultVLANIDMark>-1</X_5067F0_DefaultVLANIDMark>
+        <X_5067F0_DefaultethernetPriorityMark>-1</X_5067F0_DefaultethernetPriorityMark>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="2">
+        <Enable>TRUE</Enable>
+        <X_5067F0_IfName>eth1.0</X_5067F0_IfName>
+        <X_5067F0_DefaultTagProcessing>-1</X_5067F0_DefaultTagProcessing>
+        <X_5067F0_DefaultVLANIDMark>-1</X_5067F0_DefaultVLANIDMark>
+        <X_5067F0_DefaultethernetPriorityMark>-1</X_5067F0_DefaultethernetPriorityMark>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="3">
+        <Enable>TRUE</Enable>
+        <X_5067F0_IfName>eth2.0</X_5067F0_IfName>
+        <X_5067F0_DefaultTagProcessing>-1</X_5067F0_DefaultTagProcessing>
+        <X_5067F0_DefaultVLANIDMark>-1</X_5067F0_DefaultVLANIDMark>
+        <X_5067F0_DefaultethernetPriorityMark>-1</X_5067F0_DefaultethernetPriorityMark>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="4">
+        <Enable>TRUE</Enable>
+        <X_5067F0_IfName>eth3.0</X_5067F0_IfName>
+        <X_5067F0_DefaultTagProcessing>-1</X_5067F0_DefaultTagProcessing>
+        <X_5067F0_DefaultVLANIDMark>-1</X_5067F0_DefaultVLANIDMark>
+        <X_5067F0_DefaultethernetPriorityMark>-1</X_5067F0_DefaultethernetPriorityMark>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="5">
+        <Enable>TRUE</Enable>
+        <X_5067F0_IfName>eth10.0</X_5067F0_IfName>
+        <X_5067F0_DefaultTagProcessing>-1</X_5067F0_DefaultTagProcessing>
+        <X_5067F0_DefaultVLANIDMark>-1</X_5067F0_DefaultVLANIDMark>
+        <X_5067F0_DefaultethernetPriorityMark>-1</X_5067F0_DefaultethernetPriorityMark>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig nextInstance="6" ></LANEthernetInterfaceConfig>
+      <WLANConfiguration instance="1">
+        <MaxBitRate>144.5</MaxBitRate>
+        <Channel>11</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>wtf</SSID>
+        <BeaconType>WPAand11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>AESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>AESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_5067F0_WMMPowerSaveEnabled>TRUE</X_5067F0_WMMPowerSaveEnabled>
+        <X_5067F0_IfName>wl0</X_5067F0_IfName>
+        <X_5067F0_HideSSID>FALSE</X_5067F0_HideSSID>
+        <X_5067F0_GuestSSID>TELUS3717_Guest1</X_5067F0_GuestSSID>
+        <X_5067F0_GuestEnable>FALSE</X_5067F0_GuestEnable>
+        <X_5067F0_GuestHiden>FALSE</X_5067F0_GuestHiden>
+        <X_5067F0_GuestIsolateClients>FALSE</X_5067F0_GuestIsolateClients>
+        <X_5067F0_Guest1SSID>TELUS3717_Guest2</X_5067F0_Guest1SSID>
+        <X_5067F0_Guest1Enable>FALSE</X_5067F0_Guest1Enable>
+        <X_5067F0_Guest1Hiden>FALSE</X_5067F0_Guest1Hiden>
+        <X_5067F0_Guest1IsolateClients>FALSE</X_5067F0_Guest1IsolateClients>
+        <X_5067F0_Guest2SSID>TELUS3717_Guest3</X_5067F0_Guest2SSID>
+        <X_5067F0_Guest2Enable>FALSE</X_5067F0_Guest2Enable>
+        <X_5067F0_Guest2Hiden>FALSE</X_5067F0_Guest2Hiden>
+        <X_5067F0_Guest2IsolateClients>FALSE</X_5067F0_Guest2IsolateClients>
+        <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+        <AssociatedDevice instance="918">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="919">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="920">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="921">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="922">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="923">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="924">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="925">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="926">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="927">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="928">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="929">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice instance="930">
+          <X_5067F0_Authorized>1</X_5067F0_Authorized>
+          <X_5067F0_Ssid>wtf</X_5067F0_Ssid>
+          <X_5067F0_Ifcname>wl0</X_5067F0_Ifcname>
+        </AssociatedDevice>
+        <AssociatedDevice nextInstance="931" ></AssociatedDevice>
+        <WEPKey instance="1">
+          <WEPKey>4723d</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>celica2000</PreSharedKey>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <APWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>6</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="3">
+          <AIFSN>1</AIFSN>
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </APWMMParameter>
+        <APWMMParameter instance="4">
+          <AIFSN>1</AIFSN>
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </APWMMParameter>
+        <APWMMParameter nextInstance="5" ></APWMMParameter>
+        <STAWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="3">
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter instance="4">
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter nextInstance="5" ></STAWMMParameter>
+        <X_5067F0_WlanAdapter>
+          <WlBaseCfg>
+            <WlPhyType>n</WlPhyType>
+            <WlCoreRev>16</WlCoreRev>
+            <WlCurrentChannel>11</WlCurrentChannel>
+            <WlVer>5.60.120.11.cpe4.06L03.1</WlVer>
+            <WlAburnSupported>1</WlAburnSupported>
+            <WlAmpduSupported>1</WlAmpduSupported>
+            <WlWmeSupported>1</WlWmeSupported>
+            <WlWmfSupported>1</WlWmfSupported>
+          </WlBaseCfg>
+          <WlStaticWdsCfg instance="1">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="2">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="3">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="4">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg nextInstance="5" ></WlStaticWdsCfg>
+          <WlWmmCfg>
+            <WlAPWmmParameterCfg instance="1">
+              <ACName>be</ACName>
+              <AIFSN>3</AIFSN>
+              <ECWMin>4</ECWMin>
+              <ECWMax>6</ECWMax>
+            </WlAPWmmParameterCfg>
+            <WlAPWmmParameterCfg instance="2">
+              <ACName>bk</ACName>
+              <AIFSN>7</AIFSN>
+              <ECWMin>4</ECWMin>
+              <ECWMax>10</ECWMax>
+            </WlAPWmmParameterCfg>
+            <WlAPWmmParameterCfg instance="3">
+              <ACName>vi</ACName>
+              <AIFSN>1</AIFSN>
+              <ECWMin>3</ECWMin>
+              <ECWMax>4</ECWMax>
+              <TXOP>94</TXOP>
+            </WlAPWmmParameterCfg>
+            <WlAPWmmParameterCfg instance="4">
+              <ACName>vo</ACName>
+              <AIFSN>1</AIFSN>
+              <ECWMin>2</ECWMin>
+              <ECWMax>3</ECWMax>
+              <TXOP>47</TXOP>
+            </WlAPWmmParameterCfg>
+            <WlAPWmmParameterCfg nextInstance="5" ></WlAPWmmParameterCfg>
+            <WlSTAWmmParameterCfg instance="1">
+              <ACName>be</ACName>
+              <AIFSN>3</AIFSN>
+              <ECWMin>4</ECWMin>
+              <ECWMax>10</ECWMax>
+            </WlSTAWmmParameterCfg>
+            <WlSTAWmmParameterCfg instance="2">
+              <ACName>bk</ACName>
+              <AIFSN>7</AIFSN>
+              <ECWMin>4</ECWMin>
+              <ECWMax>10</ECWMax>
+            </WlSTAWmmParameterCfg>
+            <WlSTAWmmParameterCfg instance="3">
+              <ACName>vi</ACName>
+              <ECWMin>3</ECWMin>
+              <ECWMax>4</ECWMax>
+              <TXOP>94</TXOP>
+            </WlSTAWmmParameterCfg>
+            <WlSTAWmmParameterCfg instance="4">
+              <ACName>vo</ACName>
+              <ECWMin>2</ECWMin>
+              <ECWMax>3</ECWMax>
+              <TXOP>47</TXOP>
+            </WlSTAWmmParameterCfg>
+            <WlSTAWmmParameterCfg nextInstance="5" ></WlSTAWmmParameterCfg>
+          </WlWmmCfg>
+          <WlVirtIntfCfg instance="1">
+            <WlIdx>0</WlIdx>
+            <WlSsid>wtf</WlSsid>
+            <WlBssMacAddr>10:7B:EF:BF:D1:47</WlBssMacAddr>
+            <WlWpaPsk>celica2000</WlWpaPsk>
+            <WlWpa>aes</WlWpa>
+            <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+            <X_5067F0_AutoGenerateSsid>FALSE</X_5067F0_AutoGenerateSsid>
+            <WlMACAddressControlList></WlMACAddressControlList>
+            <WlKey64Cfg instance="1">
+              <WlKey64>4723d</WlKey64>
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+              <WlKey128>8223bbd3727df</WlKey128>
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+            <WlWpsCfg>
+              <Wsc_mode>enabled</Wsc_mode>
+            </WlWpsCfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="2">
+            <WlSsid>TELUS3717_Guest1</WlSsid>
+            <WlIfcname>wl0.1</WlIfcname>
+            <WlBssMacAddr>72:7b:ef:bf:d1:44</WlBssMacAddr>
+            <WlWpaPsk>12345678</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+            <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+            <X_5067F0_AutoGenerateSsid>FALSE</X_5067F0_AutoGenerateSsid>
+            <WlMACAddressControlList></WlMACAddressControlList>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="3">
+            <WlIdx>2</WlIdx>
+            <WlSsid>TELUS3717_Guest2</WlSsid>
+            <WlIfcname>wl0.2</WlIfcname>
+            <WlBssMacAddr>72:7b:ef:bf:d1:45</WlBssMacAddr>
+            <WlWpaPsk>12345678</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+            <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+            <X_5067F0_AutoGenerateSsid>FALSE</X_5067F0_AutoGenerateSsid>
+            <WlMACAddressControlList></WlMACAddressControlList>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="4">
+            <WlIdx>3</WlIdx>
+            <WlSsid>TELUS3717_Guest3</WlSsid>
+            <WlIfcname>wl0.3</WlIfcname>
+            <WlBssMacAddr>72:7b:ef:bf:d1:46</WlBssMacAddr>
+            <WlWpaPsk>12345678</WlWpaPsk>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+            <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+            <X_5067F0_AutoGenerateSsid>FALSE</X_5067F0_AutoGenerateSsid>
+            <WlMACAddressControlList></WlMACAddressControlList>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg nextInstance="5" ></WlVirtIntfCfg>
+        </X_5067F0_WlanAdapter>
+        <WPS>
+          <Enable>TRUE</Enable>
+          <DevicePassword>11059547</DevicePassword>
+          <ConfigMethodsSupported>Ethernet,Display,PushButton</ConfigMethodsSupported>
+          <ConfigMethodsEnabled>1,1,1</ConfigMethodsEnabled>
+          <SetupLockedState>Unlocked</SetupLockedState>
+          <ConfigurationState>Configured</ConfigurationState>
+        </WPS>
+      </WLANConfiguration>
+      <WLANConfiguration instance="2">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>144.5</MaxBitRate>
+        <Channel>11</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>TELUS3717_Guest1</SSID>
+        <BeaconType>WPAand11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_5067F0_WMMPowerSaveEnabled>TRUE</X_5067F0_WMMPowerSaveEnabled>
+        <X_5067F0_IfName>wl0.1</X_5067F0_IfName>
+        <X_5067F0_GuestSSID>TELUS3717_Guest1</X_5067F0_GuestSSID>
+        <X_5067F0_GuestEnable>FALSE</X_5067F0_GuestEnable>
+        <X_5067F0_GuestHiden>FALSE</X_5067F0_GuestHiden>
+        <X_5067F0_GuestIsolateClients>FALSE</X_5067F0_GuestIsolateClients>
+        <X_5067F0_Guest1SSID>TELUS3717_Guest2</X_5067F0_Guest1SSID>
+        <X_5067F0_Guest1Enable>FALSE</X_5067F0_Guest1Enable>
+        <X_5067F0_Guest1Hiden>FALSE</X_5067F0_Guest1Hiden>
+        <X_5067F0_Guest1IsolateClients>FALSE</X_5067F0_Guest1IsolateClients>
+        <X_5067F0_Guest2SSID>TELUS3717_Guest3</X_5067F0_Guest2SSID>
+        <X_5067F0_Guest2Enable>FALSE</X_5067F0_Guest2Enable>
+        <X_5067F0_Guest2Hiden>FALSE</X_5067F0_Guest2Hiden>
+        <X_5067F0_Guest2IsolateClients>FALSE</X_5067F0_Guest2IsolateClients>
+        <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+        <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+        <WEPKey instance="1">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>12345678</PreSharedKey>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <APWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>6</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="3">
+          <AIFSN>1</AIFSN>
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </APWMMParameter>
+        <APWMMParameter instance="4">
+          <AIFSN>1</AIFSN>
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </APWMMParameter>
+        <APWMMParameter nextInstance="5" ></APWMMParameter>
+        <STAWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="3">
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter instance="4">
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter nextInstance="5" ></STAWMMParameter>
+        <WPS>
+          <ConfigMethodsSupported>Ethernet,Display,PushButton</ConfigMethodsSupported>
+          <ConfigMethodsEnabled>1,1,1</ConfigMethodsEnabled>
+          <SetupLockedState>Unlocked</SetupLockedState>
+        </WPS>
+      </WLANConfiguration>
+      <WLANConfiguration instance="3">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>144.5</MaxBitRate>
+        <Channel>11</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>TELUS3717_Guest2</SSID>
+        <BeaconType>WPAand11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_5067F0_WMMPowerSaveEnabled>TRUE</X_5067F0_WMMPowerSaveEnabled>
+        <X_5067F0_IfName>wl0.2</X_5067F0_IfName>
+        <X_5067F0_GuestSSID>TELUS3717_Guest1</X_5067F0_GuestSSID>
+        <X_5067F0_GuestEnable>FALSE</X_5067F0_GuestEnable>
+        <X_5067F0_GuestHiden>FALSE</X_5067F0_GuestHiden>
+        <X_5067F0_GuestIsolateClients>FALSE</X_5067F0_GuestIsolateClients>
+        <X_5067F0_Guest1SSID>TELUS3717_Guest2</X_5067F0_Guest1SSID>
+        <X_5067F0_Guest1Enable>FALSE</X_5067F0_Guest1Enable>
+        <X_5067F0_Guest1Hiden>FALSE</X_5067F0_Guest1Hiden>
+        <X_5067F0_Guest1IsolateClients>FALSE</X_5067F0_Guest1IsolateClients>
+        <X_5067F0_Guest2SSID>TELUS3717_Guest3</X_5067F0_Guest2SSID>
+        <X_5067F0_Guest2Enable>FALSE</X_5067F0_Guest2Enable>
+        <X_5067F0_Guest2Hiden>FALSE</X_5067F0_Guest2Hiden>
+        <X_5067F0_Guest2IsolateClients>FALSE</X_5067F0_Guest2IsolateClients>
+        <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+        <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+        <WEPKey instance="1">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>12345678</PreSharedKey>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <APWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>6</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="3">
+          <AIFSN>1</AIFSN>
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </APWMMParameter>
+        <APWMMParameter instance="4">
+          <AIFSN>1</AIFSN>
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </APWMMParameter>
+        <APWMMParameter nextInstance="5" ></APWMMParameter>
+        <STAWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="3">
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter instance="4">
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter nextInstance="5" ></STAWMMParameter>
+        <WPS>
+          <ConfigMethodsSupported>Ethernet,Display,PushButton</ConfigMethodsSupported>
+          <ConfigMethodsEnabled>1,1,1</ConfigMethodsEnabled>
+          <SetupLockedState>Unlocked</SetupLockedState>
+        </WPS>
+      </WLANConfiguration>
+      <WLANConfiguration instance="4">
+        <Enable>FALSE</Enable>
+        <MaxBitRate>144.5</MaxBitRate>
+        <Channel>11</Channel>
+        <AutoChannelEnable>TRUE</AutoChannelEnable>
+        <SSID>TELUS3717_Guest3</SSID>
+        <BeaconType>WPAand11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>TKIPandAESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>TKIPandAESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>US</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_5067F0_WMMPowerSaveEnabled>TRUE</X_5067F0_WMMPowerSaveEnabled>
+        <X_5067F0_IfName>wl0.3</X_5067F0_IfName>
+        <X_5067F0_GuestSSID>TELUS3717_Guest1</X_5067F0_GuestSSID>
+        <X_5067F0_GuestEnable>FALSE</X_5067F0_GuestEnable>
+        <X_5067F0_GuestHiden>FALSE</X_5067F0_GuestHiden>
+        <X_5067F0_GuestIsolateClients>FALSE</X_5067F0_GuestIsolateClients>
+        <X_5067F0_Guest1SSID>TELUS3717_Guest2</X_5067F0_Guest1SSID>
+        <X_5067F0_Guest1Enable>FALSE</X_5067F0_Guest1Enable>
+        <X_5067F0_Guest1Hiden>FALSE</X_5067F0_Guest1Hiden>
+        <X_5067F0_Guest1IsolateClients>FALSE</X_5067F0_Guest1IsolateClients>
+        <X_5067F0_Guest2SSID>TELUS3717_Guest3</X_5067F0_Guest2SSID>
+        <X_5067F0_Guest2Enable>FALSE</X_5067F0_Guest2Enable>
+        <X_5067F0_Guest2Hiden>FALSE</X_5067F0_Guest2Hiden>
+        <X_5067F0_Guest2IsolateClients>FALSE</X_5067F0_Guest2IsolateClients>
+        <X_5067F0_AutoGenerateWpaKey>FALSE</X_5067F0_AutoGenerateWpaKey>
+        <X_5067F0_AutoGenerateWepKey>FALSE</X_5067F0_AutoGenerateWepKey>
+        <WEPKey instance="1">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <PreSharedKey>12345678</PreSharedKey>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <APWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>6</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </APWMMParameter>
+        <APWMMParameter instance="3">
+          <AIFSN>1</AIFSN>
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </APWMMParameter>
+        <APWMMParameter instance="4">
+          <AIFSN>1</AIFSN>
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </APWMMParameter>
+        <APWMMParameter nextInstance="5" ></APWMMParameter>
+        <STAWMMParameter instance="1">
+          <AIFSN>3</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="2">
+          <AIFSN>7</AIFSN>
+          <ECWMin>4</ECWMin>
+          <ECWMax>10</ECWMax>
+        </STAWMMParameter>
+        <STAWMMParameter instance="3">
+          <ECWMin>3</ECWMin>
+          <ECWMax>4</ECWMax>
+          <TXOP>94</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter instance="4">
+          <ECWMin>2</ECWMin>
+          <ECWMax>3</ECWMax>
+          <TXOP>47</TXOP>
+        </STAWMMParameter>
+        <STAWMMParameter nextInstance="5" ></STAWMMParameter>
+        <WPS>
+          <ConfigMethodsSupported>Ethernet,Display,PushButton</ConfigMethodsSupported>
+          <ConfigMethodsEnabled>1,1,1</ConfigMethodsEnabled>
+          <SetupLockedState>Unlocked</SetupLockedState>
+        </WPS>
+      </WLANConfiguration>
+      <WLANConfiguration nextInstance="5" ></WLANConfiguration>
+      <Hosts>
+        <Host nextInstance="30" ></Host>
+      </Hosts>
+    </LANDevice>
+    <LANDevice nextInstance="2" ></LANDevice>
+    <WANDevice instance="1">
+      <WANConnectionNumberOfEntries>2</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_5067F0_XTM_Interface_Stats instance="1">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="2">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="3">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="4">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats nextInstance="5" ></X_5067F0_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <X_5067F0_DslCfgParam>32508288</X_5067F0_DslCfgParam>
+      </WANDSLInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANDSLLinkConfig>
+          <Enable>TRUE</Enable>
+          <LinkType>EoA</LinkType>
+          <X_5067F0_ATMEnbQos>TRUE</X_5067F0_ATMEnbQos>
+          <X_5067F0_GrpPrecedence>8</X_5067F0_GrpPrecedence>
+          <X_5067F0_IfName>atm0</X_5067F0_IfName>
+        </WANDSLLinkConfig>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>ADSL_DEFAULT_0_33</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_5067F0_IGMPEnabled>TRUE</X_5067F0_IGMPEnabled>
+          <MACAddress>10:7B:EF:BF:D1:48</MACAddress>
+          <X_5067F0_IfName>atm0</X_5067F0_IfName>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_5067F0_GatewayUsed>TRUE</X_5067F0_GatewayUsed>
+          <X_5067F0_UPNPPortMappingRule nextInstance="4" ></X_5067F0_UPNPPortMappingRule>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice instance="2">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANDSLLinkConfig>
+          <Enable>TRUE</Enable>
+          <LinkType>EoA</LinkType>
+          <DestinationAddress>PVC: 8/35</DestinationAddress>
+          <X_5067F0_ATMEnbQos>TRUE</X_5067F0_ATMEnbQos>
+          <X_5067F0_GrpPrecedence>8</X_5067F0_GrpPrecedence>
+          <X_5067F0_IfName>atm1</X_5067F0_IfName>
+        </WANDSLLinkConfig>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>ADSL_DEFAULT_8_35</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_5067F0_IGMPEnabled>TRUE</X_5067F0_IGMPEnabled>
+          <MACAddress>10:7B:EF:BF:D1:49</MACAddress>
+          <X_5067F0_IfName>atm1</X_5067F0_IfName>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_5067F0_GatewayUsed>TRUE</X_5067F0_GatewayUsed>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="3" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="2">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_5067F0_XTM_Interface_Stats instance="1">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="2">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="3">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats instance="4">
+      </X_5067F0_XTM_Interface_Stats>
+      <X_5067F0_XTM_Interface_Stats nextInstance="5" ></X_5067F0_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <LinkEncapsulationUsed>G.992.3_Annex_K_PTM</LinkEncapsulationUsed>
+        <X_5067F0_DslCfgParam>32508288</X_5067F0_DslCfgParam>
+      </WANDSLInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANPTMLinkConfig>
+          <Enable>TRUE</Enable>
+          <X_5067F0_PTMEnbQos>TRUE</X_5067F0_PTMEnbQos>
+          <X_5067F0_GrpPrecedence>8</X_5067F0_GrpPrecedence>
+          <X_5067F0_ConnectionMode>VlanMuxMode</X_5067F0_ConnectionMode>
+          <X_5067F0_IfName>ptm0</X_5067F0_IfName>
+        </WANPTMLinkConfig>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>VDSL_DEFAULT</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_5067F0_IGMPEnabled>TRUE</X_5067F0_IGMPEnabled>
+          <X_5067F0_IfName>ptm0.1</X_5067F0_IfName>
+          <X_5067F0_ConnectionId>1</X_5067F0_ConnectionId>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_5067F0_GatewayUsed>TRUE</X_5067F0_GatewayUsed>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="2" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="3">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>Ethernet</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <WANEthernetInterfaceConfig>
+        <MaxBitRate>Auto</MaxBitRate>
+        <DuplexMode>Auto</DuplexMode>
+        <X_5067F0_WanToLanIfName>eth10</X_5067F0_WanToLanIfName>
+        <X_5067F0_ConnectionMode>VlanMuxMode</X_5067F0_ConnectionMode>
+        <X_5067F0_WanToLanState>2</X_5067F0_WanToLanState>
+      </WANEthernetInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANIPConnection instance="1">
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>ETH_DEFAULT</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_5067F0_IGMPEnabled>TRUE</X_5067F0_IGMPEnabled>
+          <X_5067F0_IfName>eth10.1</X_5067F0_IfName>
+          <X_5067F0_ConnectionId>1</X_5067F0_ConnectionId>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_5067F0_GatewayUsed>TRUE</X_5067F0_GatewayUsed>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="2" ></WANConnectionDevice>
+    </WANDevice>
+    <X_5067F0_VcAutoHunt>
+      <NumPvcSet>2</NumPvcSet>
+      <VcHuntInfo instance="1">
+        <PvcId>0</PvcId>
+        <NumHuntRule>7</NumHuntRule>
+        <VcHuntRule instance="1">
+        </VcHuntRule>
+        <VcHuntRule instance="2">
+          <RuleId>1</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="3">
+          <RuleId>2</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="4">
+          <RuleId>3</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="5">
+          <RuleId>4</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="6">
+          <RuleId>5</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="7">
+          <RuleId>6</RuleId>
+        </VcHuntRule>
+        <VcHuntRule nextInstance="8" ></VcHuntRule>
+      </VcHuntInfo>
+      <VcHuntInfo instance="2">
+        <PvcId>1</PvcId>
+        <NumHuntRule>7</NumHuntRule>
+        <VcHuntRule instance="1">
+        </VcHuntRule>
+        <VcHuntRule instance="2">
+          <RuleId>1</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="3">
+          <RuleId>2</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="4">
+          <RuleId>3</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="5">
+          <RuleId>4</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="6">
+          <RuleId>5</RuleId>
+        </VcHuntRule>
+        <VcHuntRule instance="7">
+          <RuleId>6</RuleId>
+        </VcHuntRule>
+        <VcHuntRule nextInstance="8" ></VcHuntRule>
+      </VcHuntInfo>
+      <VcHuntInfo nextInstance="3" ></VcHuntInfo>
+    </X_5067F0_VcAutoHunt>
+    <Layer3Forwarding>
+      <DefaultConnectionService>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1</DefaultConnectionService>
+      <ForwardNumberOfEntries>0</ForwardNumberOfEntries>
+      <X_5067F0_DefaultConnectionServices>atm0,atm1,ptm0.1,eth10.1</X_5067F0_DefaultConnectionServices>
+    </Layer3Forwarding>
+    <X_5067F0_MacFilterObj>
+      <X_5067F0_MacFilterCfg instance="1">
+        <Enable>TRUE</Enable>
+        <HostName>Rain-Fluff</HostName>
+        <SourceMAC>68:5b:35:91:f3:0a</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="2">
+        <Enable>TRUE</Enable>
+        <SourceMAC>e0:f8:47:1f:f1:2a</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="3">
+        <Enable>TRUE</Enable>
+        <HostName>BLU_LIFE_XL</HostName>
+        <SourceMAC>cc:79:4a:e3:ca:da</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="4">
+        <Enable>TRUE</Enable>
+        <HostName>MannixCeysiPad2</HostName>
+        <SourceMAC>a4:67:06:7f:42:9e</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="5">
+        <Enable>TRUE</Enable>
+        <HostName>oneplusone</HostName>
+        <SourceMAC>c0:ee:fb:24:af:75</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="6">
+        <Enable>TRUE</Enable>
+        <HostName>BreckeneysiPad2</HostName>
+        <SourceMAC>a4:67:06:87:96:77</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="7">
+        <Enable>TRUE</Enable>
+        <HostName>NicoleCsiPhone5</HostName>
+        <SourceMAC>0c:3e:9f:72:e4:35</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="8">
+        <Enable>TRUE</Enable>
+        <HostName>android-52dd5dd66989fe41</HostName>
+        <SourceMAC>00:9a:cd:14:39:b1</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="9">
+        <Enable>TRUE</Enable>
+        <HostName>BLU_LIFE_XL</HostName>
+        <SourceMAC>cc:79:4a:e3:cb:7e</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="10">
+        <Enable>TRUE</Enable>
+        <HostName>android-3dcf91a13eb26b29</HostName>
+        <SourceMAC>7c:f9:0e:cb:ef:81</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="11">
+        <Enable>TRUE</Enable>
+        <HostName>Earls-iPhone</HostName>
+        <SourceMAC>84:85:06:2e:61:3f</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="12">
+        <Enable>TRUE</Enable>
+        <HostName>android-1e0bef09c12824b2</HostName>
+        <SourceMAC>80:a5:89:c7:e6:3b</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="13">
+        <Enable>TRUE</Enable>
+        <HostName>iPad</HostName>
+        <SourceMAC>24:a0:74:47:3e:d8</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="14">
+        <Enable>TRUE</Enable>
+        <HostName>gwf-04</HostName>
+        <SourceMAC>c8:f7:33:34:2e:c5</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="15">
+        <Enable>TRUE</Enable>
+        <HostName>kali</HostName>
+        <SourceMAC>00:0c:29:65:8e:ab</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="16">
+        <Enable>TRUE</Enable>
+        <HostName>WDTVLive</HostName>
+        <SourceMAC>00:90:a9:65:61:1f</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg instance="17">
+        <Enable>TRUE</Enable>
+        <HostName>Wades-iPhone</HostName>
+        <SourceMAC>00:b3:62:8f:15:1d</SourceMAC>
+      </X_5067F0_MacFilterCfg>
+      <X_5067F0_MacFilterCfg nextInstance="18" ></X_5067F0_MacFilterCfg>
+    </X_5067F0_MacFilterObj>
+    <X_5067F0_CertificateCfg instance="1">
+      <Name>cpecert</Name>
+      <Subject>CN=ZyXELcert/O=ZyXEL/OU=ZyXEL/C=TW
+</Subject>
+      <Type>signed</Type>
+      <Content>-----BEGIN CERTIFICATE-----
+MIIDKTCCAhECCQCce5j6lQjIPzANBgkqhkiG9w0BAQUFADBsMRQwEgYDVQQDEwsx
+NzIuMjEuMS4xNDEOMAwGA1UEChMFenl4ZWwxDDAKBgNVBAsTA2NwZTELMAkGA1UE
+BhMCVFcxKTAnBgkqhkiG9w0BCQEWGmpoZW55YW5nLndhbmdAenl4ZWwuY29tLnR3
+MB4XDTA5MTIxNzA1MjIyMFoXDTExMTIxNzA1MjIyMFowQTESMBAGA1UEAxMJWnlY
+RUxjZXJ0MQ4wDAYDVQQKEwVaeVhFTDEOMAwGA1UECxMFWnlYRUwxCzAJBgNVBAYT
+AlRXMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt0rb40B8wvpGQ1Q6
+pBbO8M4LO3V4gB0LRhojIriZsFoMC7CHQuzK2jASwDvmcPQQw7TDgK9aJNAYsNNh
+ShlKYOEiiKAqCa5edhwTGd6+JLL1lOVf6l7TENKMtBV/TxmG4jReljeOacJ6lIBj
+dySqDyEKEnQD+A7stmyOIK/QBa31ujjO9PtSUr46gXDms+XPPkRzKcKFK7vZtNkF
+3pNETjMAZaW/5q0h93OZ3yV0GCDKsFkmtP8kDtKbpXjaFp/9GPc3gbkDcIvUJZAz
+UXUz0+GyA9P17W2QFOQ2L+elBaHbG1/3hWVaxi2vIwAqGoPGjuOT8F8a13xrVzkR
+3hpK+wIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQBcAd2D10I1dQXMhxlzCXq/mdZn
+irqrI5CNpd/5vtspBk7P4Awj9t9R8qtX7J9Ym0ikeaV05gMJAfRzPvW4e9v7ZRjv
+YlOpa1PlzMx/1WgcbZrPe+MC9Zd7kaSrCpNvDtnJasiVt4BJMvrtp8pFLNcHIsPo
++gx8uZeuUbhCdDNwlFIJfNEKlEjdhPHdoWJA2As9qw/AAOL89Vuv5jDLgI6YQ1yq
+bF6hlpBxz/UjH+l2BGW+qtBlk9qkFpO/Cp7s55OLAb7BgDelzTFIF+HmPlMEuuPm
+LQby7Jkcw30ywbvUZA9MGG/Nc/yEBvXzOEtxIYjiPJTIFJavgswFVX+x66Hp
+-----END CERTIFICATE-----
+</Content>
+      <PrivKey>-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAt0rb40B8wvpGQ1Q6pBbO8M4LO3V4gB0LRhojIriZsFoMC7CH
+QuzK2jASwDvmcPQQw7TDgK9aJNAYsNNhShlKYOEiiKAqCa5edhwTGd6+JLL1lOVf
+6l7TENKMtBV/TxmG4jReljeOacJ6lIBjdySqDyEKEnQD+A7stmyOIK/QBa31ujjO
+9PtSUr46gXDms+XPPkRzKcKFK7vZtNkF3pNETjMAZaW/5q0h93OZ3yV0GCDKsFkm
+tP8kDtKbpXjaFp/9GPc3gbkDcIvUJZAzUXUz0+GyA9P17W2QFOQ2L+elBaHbG1/3
+hWVaxi2vIwAqGoPGjuOT8F8a13xrVzkR3hpK+wIDAQABAoIBAAew7nUkuZd85QHi
+QOutwVU9cB84mKvXjCeO5TaJxHkv7h13dNWMFh79sWu7l7nZo/JyXVnDAedVjBOv
+av+u+/4AtHBDOEBbvr76ApstS5FCqSdsUJAHFpg4HYtY85SgH5bSV7256xHpBTfC
+A2p2cWRdII0RrTD1f11QRM5+Uh5K0jreLGfNl8IdOC3IR0G1dwhlSO92A5HGWPi4
+DquJtq3apvX0HgS/oTCZmYP1wzjDJzcSVwW2XYmHFH9wiBiAnru2+XO+eJZtW2em
+0ssTyo3/EJGYkJGHd+vOugyjH8t+VBDYA+iphChDuuRT/So8GrSDfSFhmjw3NAnB
+qZwPR4ECgYEA3zI/LLrMbNDYwpEAnTjA0NsXHfm/sn+II3/RmmgSXaHIg9ge4jk0
+3rWplIWTY5gFF8qo0gdR45gdmxAW+Uw8Yqr1thhVPPR+gJ7o8LiRl1xFgsDbDeLA
+sZ+hAZWPhmQaJydckvo/UoMdFjm9BhZl0yCAB2+6ZyXhvGABbvMIPBsCgYEA0js7
+DRkLARbv3g9NX9L0hHOIEMoUyWIb/0b+KuU++PWlzXxMOKPSMbwJf4axmviIblyD
+o22v7Z9sY5V5AgVXkpQzSyp3qnlDtP3J2TpBG9XagL9sIz0gif+4sxReyC9jn+wv
+okr4J79CM0Agjt0WOt4UdGdwyvvBwg2WRpkRWqECgYEAi9UsFTb2yhnSI5u62cVr
+r64Dfqkwu4EA5tS2mdkn4Hdya3+kYbDbecgwdTd2jsf4MN6sA+HIISH1MmfTLN7h
+WiOniy0Vgfnfo29rmxzXQg/yEKgI1VtBxEaxFZAA+n6OkAcuDXsw3t38BCeqUD0K
+EErlS0NpciQel+lCHKOwfg8CgYAi54ShYxQJpUZEByRgkYTZbNkdeH/FA84EL0RJ
+2PAAo8BYgpehG8ntSfwFuVZJlZQJRsDwZGi+OibjzdBefoaQppxxkWZ23lVYen6F
+238t4O67S4znuOFrKBMBYJNwBzYyOiOafXoAF2glXDNLpPdo5LBet0Hp4azEzD60
+D/vqoQKBgHdz6bc308y+bSAaUcbEqSkUekWzyIldXanhKeYb9/YP+N4NFVLrYtP/
+880iVAp8ARriXMQZW3UKjt/qQktOeiy3gJAO09qJ3AafGNyrCsmGLCWjBtaZZvuj
+tGteeJ4vsUB9kaLRl20D8JNA7LiF8WqjfBuk5kWvHi9z+hVq7/QD
+-----END RSA PRIVATE KEY-----
+</PrivKey>
+      <RefCount>1</RefCount>
+    </X_5067F0_CertificateCfg>
+    <X_5067F0_CertificateCfg instance="2">
+      <Name>Pca-3.pem</Name>
+      <Subject>C=US/O=VeriSign, Inc./OU=Class 3 Public Primary Certification Authority
+</Subject>
+      <Type>ca</Type>
+      <Content>-----BEGIN CERTIFICATE-----
+MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/Er4wDQYJKoZIhvcNAQEFBQAwXzELMAkG
+A1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMTcwNQYDVQQLEy5DbGFz
+cyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTk2
+MDEyOTAwMDAwMFoXDTI4MDgwMjIzNTk1OVowXzELMAkGA1UEBhMCVVMxFzAVBgNV
+BAoTDlZlcmlTaWduLCBJbmMuMTcwNQYDVQQLEy5DbGFzcyAzIFB1YmxpYyBQcmlt
+YXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIGfMA0GCSqGSIb3DQEBAQUAA4GN
+ADCBiQKBgQDJXFme8huKARS0EN8EQNvjV69qRUCPhAwL0TPZ2RHP7gJYHyX3KqhE
+BarsAx94f56TuZoAqiN91qyFomNFx3InzPRMxnVx0jnvT0Lwdd8KkMaOIG+YD/is
+I19wKTakyYbnsZogy1Olhec9vn2a/iRFM9x2Fe0PonFkTGUugWhFpwIDAQABMA0G
+CSqGSIb3DQEBBQUAA4GBABByUqkFFBkyCEHwxWsKzH4PIRnN5GfcX6kb5sroc50i
+2JhucwNhkcV8sEVAbkSdjbCxlnRhLQ2pRdKkkirWmnWXbj9T/UWZYB2oK0z5XqcJ
+2HUw19JlYD1n1khVdWk/kfVIC0dpImmClr7JyDiGSnoscxlIaU5rfGW/D/xwzoiQ
+-----END CERTIFICATE-----
+</Content>
+      <EnableCACertTR069>TRUE</EnableCACertTR069>
+    </X_5067F0_CertificateCfg>
+    <X_5067F0_CertificateCfg instance="3">
+      <Name>Pca-3g5.pem</Name>
+      <Subject>C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G5
+</Subject>
+      <Type>ca</Type>
+      <Content>-----BEGIN CERTIFICATE-----
+MIIE0zCCA7ugAwIBAgIQGNrRniZ96LtKIVjNzGs7SjANBgkqhkiG9w0BAQUFADCB
+yjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQL
+ExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJp
+U2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxW
+ZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IC0gRzUwHhcNMDYxMTA4MDAwMDAwWhcNMzYwNzE2MjM1OTU5WjCByjEL
+MAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZW
+ZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2ln
+biwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJp
+U2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9y
+aXR5IC0gRzUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvJAgIKXo1
+nmAMqudLO07cfLw8RRy7K+D+KQL5VwijZIUVJ/XxrcgxiV0i6CqqpkKzj/i5Vbex
+t0uz/o9+B1fs70PbZmIVYc9gDaTY3vjgw2IIPVQT60nKWVSFJuUrjxuf6/WhkcIz
+SdhDY2pSS9KP6HBRTdGJaXvHcPaz3BJ023tdS1bTlr8Vd6Gw9KIl8q8ckmcY5fQG
+BO+QueQA5N06tRn/Arr0PO7gi+s3i+z016zy9vA9r911kTMZHRxAy3QkGSGT2RT+
+rCpSx4/VBEnkjWNHiDxpg8v+R70rfk/Fla4OndTRQ8Bnc+MUCH7lP59zuDMKz10/
+NIeWiu5T6CUVAgMBAAGjgbIwga8wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8E
+BAMCAQYwbQYIKwYBBQUHAQwEYTBfoV2gWzBZMFcwVRYJaW1hZ2UvZ2lmMCEwHzAH
+BgUrDgMCGgQUj+XTGoasjY5rw8+AatRIGCx7GS4wJRYjaHR0cDovL2xvZ28udmVy
+aXNpZ24uY29tL3ZzbG9nby5naWYwHQYDVR0OBBYEFH/TZafC3ey78DAJ80M5+gKv
+MzEzMA0GCSqGSIb3DQEBBQUAA4IBAQCTJEowX2LP2BqYLz3q3JktvXf2pXkiOOzE
+p6B4Eq1iDkVwZMXnl2YtmAl+X6/WzChl8gGqCBpH3vn5fJJaCGkgDdk+bW48DW7Y
+5gaRQBi5+MHt39tBquCWIMnNZBU4gcmU7qKEKQsTb47bDN0lAtukixlE0kF6BWlK
+WE9gyn6CagsCqiUXObXbf+eEZSqVir2G3l6BFoMtEMze/aiCKm0oHw0LxOXnGiYZ
+4fQRbxC1lfznQgUy286dUV4otp6F01vvpX1FQHKOtw5rDgb7MzVIcbidJ4vEZV8N
+hnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq
+-----END CERTIFICATE-----
+</Content>
+      <EnableCACertTR069>TRUE</EnableCACertTR069>
+    </X_5067F0_CertificateCfg>
+    <X_5067F0_CertificateCfg instance="4">
+      <Name>PCA-3G3.pem</Name>
+      <Subject>C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G3
+</Subject>
+      <Type>ca</Type>
+      <Content>-----BEGIN CERTIFICATE-----
+MIIEGjCCAwICEQCbfgZJoz5iudXukEhxKe9XMA0GCSqGSIb3DQEBBQUAMIHKMQsw
+CQYDVQQGEwJVUzEXMBUGA1UEChMOVmVyaVNpZ24sIEluYy4xHzAdBgNVBAsTFlZl
+cmlTaWduIFRydXN0IE5ldHdvcmsxOjA4BgNVBAsTMShjKSAxOTk5IFZlcmlTaWdu
+LCBJbmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9ubHkxRTBDBgNVBAMTPFZlcmlT
+aWduIENsYXNzIDMgUHVibGljIFByaW1hcnkgQ2VydGlmaWNhdGlvbiBBdXRob3Jp
+dHkgLSBHMzAeFw05OTEwMDEwMDAwMDBaFw0zNjA3MTYyMzU5NTlaMIHKMQswCQYD
+VQQGEwJVUzEXMBUGA1UEChMOVmVyaVNpZ24sIEluYy4xHzAdBgNVBAsTFlZlcmlT
+aWduIFRydXN0IE5ldHdvcmsxOjA4BgNVBAsTMShjKSAxOTk5IFZlcmlTaWduLCBJ
+bmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9ubHkxRTBDBgNVBAMTPFZlcmlTaWdu
+IENsYXNzIDMgUHVibGljIFByaW1hcnkgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkg
+LSBHMzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMu6nFL8eB8aHm8b
+N3O9+MlrlBIwT/A2R/XQkQr1F8ilYcEWQE37imGQ5XYgwREGfassbqb1EUGO+i2t
+KmFZpGcmTNDovFJbcCAEWNF6yaRpvIMXZK0Fi7zQWM6NjPXr8EJJC52XJ2cybuGu
+kxUccLwgTS8Y3pKI6GyFVxEa6X7jJhFUokWWVYPKMIno3Nij7SqAP395ZVc+FSBm
+CC+Vk7+qRy+oRpfwEuL+wgorUeZ25rdGt+INpsyow0xZVYnm6FNcHOqd8GIWC6fJ
+Xwzw3sJ2zq/3avL6QaaiMxTJ5Xpj055iN9WFZZ4O5lMkdBteHRJTW8cs54NJOxWu
+imi5V5cCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAERSWwauSCPc/L8my/uRan2Te
+2yFPhpk0djZX3dAVL8WtfxUfN2JzPtTnX84XA9s1+ivbrmAJXx5fj267Cz3qWhMe
+DGBvtcC1IyIuBwvLqXTLR7sdwdela8wv0kL9Sd2nic9TutoAWii/gt/4uhMdUIaC
+/Y4wjylGsB49Ndo4YhYYSq3mtlFs3q9i6wHQHiT+eo8SGhJouPtmmRQURVyu565p
+F4ErWjfJXir0xuKhXFSbplQAz/DxwceYMBo7Nhbbo27q/a2ywtrvAkcTisDxszGt
+TxzhT5yvDwyd93gN2PQ1VoDat20Xj50egWTh/sVFuq1ruQp6Tk9LhO5L8X3dEQ==
+-----END CERTIFICATE-----
+</Content>
+      <EnableCACertTR069>TRUE</EnableCACertTR069>
+    </X_5067F0_CertificateCfg>
+    <X_5067F0_CertificateCfg nextInstance="5" ></X_5067F0_CertificateCfg>
+    <X_5067F0_NetworkConfig>
+      <DNSIfName>atm0,atm1,ptm0.1,eth10.1</DNSIfName>
+    </X_5067F0_NetworkConfig>
+    <X_5067F0_IGMP>
+      <IGMPproxy>TRUE</IGMPproxy>
+      <GroupStats nextInstance="6" ></GroupStats>
+      <HostStats nextInstance="24" ></HostStats>
+      <HostConfig instance="5">
+        <HostIPAddr>192.168.1.64</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>c0:ee:fb:24:af:75</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="8">
+        <HostIPAddr>192.168.1.67</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>00:9a:cd:14:39:b1</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="9">
+        <HostIPAddr>192.168.1.71</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>cc:79:4a:e3:cb:7e</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="10">
+        <HostIPAddr>192.168.1.65</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>7c:f9:0e:cb:ef:81</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="11">
+        <HostIPAddr>192.168.1.74</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>84:85:06:2e:61:3f</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="12">
+        <HostIPAddr>192.168.1.69</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>80:a5:89:c7:e6:3b</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="13">
+        <HostIPAddr>192.168.1.76</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>24:a0:74:47:3e:d8</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="14">
+        <HostIPAddr>192.168.1.80</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>c8:f7:33:34:2e:c5</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="15">
+        <HostIPAddr>192.168.1.68</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>e0:f8:47:1f:f1:2a</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="17">
+        <HostIPAddr>192.168.1.77</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>00:90:a9:65:61:1f</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="19">
+        <HostIPAddr>192.168.1.73</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>0c:3e:9f:72:e4:35</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="20">
+        <HostIPAddr>192.168.1.72</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>00:b3:62:8f:15:1d</HostMacAddr>
+      </HostConfig>
+      <HostConfig instance="21">
+        <HostIPAddr>192.168.1.75</HostIPAddr>
+        <HostIsSTB>FALSE</HostIsSTB>
+        <IGMPEnable>TRUE</IGMPEnable>
+        <HostMacAddr>a4:67:06:87:96:77</HostMacAddr>
+      </HostConfig>
+      <HostConfig nextInstance="23" ></HostConfig>
+    </X_5067F0_IGMP>
+    <X_5067F0_NAT_Session>
+      <maxsession>0</maxsession>
+    </X_5067F0_NAT_Session>
+  </InternetGatewayDevice>
+</DslCpeConfig>
